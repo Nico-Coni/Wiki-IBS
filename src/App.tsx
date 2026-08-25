@@ -1,15 +1,19 @@
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Hero from './components/Hero/Hero'
 
 function App() {
 
   return (
     <>
       <Header />
-      <Hero />
+
+      <main>
+        <Hero />
+      </main>
+
       <Footer />
+
     </>
   )
 }

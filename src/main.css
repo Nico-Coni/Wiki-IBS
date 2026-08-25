@@ -1,0 +1,67 @@
+:root {
+  --background: #f7f9f7;
+  --surface: #ffffff;
+  --surface-secondary: #edf5ee;
+
+  --primary: #4caf4f;
+  --primary-hover: #3e9441;
+  --primary-soft: #dff0e1;
+
+  --text: #263238;
+  --text-secondary: #717171;
+
+  --border: #e2e8e3;
+
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 32px;
+}
+
+[data-theme='dark'] {
+  --background: #101412;
+  --surface: #171c19;
+  --surface-secondary: #1e2a22;
+
+  --primary: #4caf4f;
+  --primary-hover: #66bb6a;
+  --primary-soft: #203b26;
+
+  --text: #f1f5f2;
+  --text-secondary: #a7b0aa;
+
+  --border: #29332d;
+}
+
+body,
+.header,
+.button,
+.header__theme-button,
+.header__logo-mark,
+section,
+footer {
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+* {
+  box-sizing: border-box;
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
