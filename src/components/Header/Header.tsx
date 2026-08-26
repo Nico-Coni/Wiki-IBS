@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './Header.css'
 import logo from '../../assets/IBS_Logo.png'
 
+
 const navigation = [
     { label: 'About', href: '#about' },
     { label: 'Vision', href: '#vision' },
@@ -29,7 +30,7 @@ function Header() {
                     <img src={logo} alt="Logo de Wiki-IBS" />
                 </span>
 
-                <span>WIKI-IBS</span>
+                <span>Wiki-IBS</span>
             </a>
 
             <button
@@ -69,7 +70,11 @@ function Header() {
                     className="button button--primary header__discord"
                     href="#community"
                 >
-                    Join Discord
+                    <span
+                        className="header__discord-logo"
+                        aria-hidden="true"
+                    />
+                    Join us on Discord
                 </a>
             </div>
         </header>

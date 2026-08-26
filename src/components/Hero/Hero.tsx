@@ -1,4 +1,3 @@
-// import intestineImage from '../../assets/IBS_Logo.png'
 import './Hero.css'
 
 function Hero() {
@@ -21,7 +20,11 @@ function Hero() {
                 </p>
 
                 <a className="hero__button" href="#community">
-                    Join the Community
+                    <span
+                        className="header__discord-logo"
+                        aria-hidden="true"
+                    />
+                    Join us on Discord
                 </a>
             </div>
 

@@ -15,6 +15,9 @@
   --radius-small: 12px;
   --radius-medium: 20px;
   --radius-large: 32px;
+
+  --header-height: 92px;
+  --next-section-peek: 72px;
 }
 
 [data-theme='dark'] {
