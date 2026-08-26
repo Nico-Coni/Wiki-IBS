@@ -1,4 +1,5 @@
 import './Community.css'
+import communityLogo from '../../assets/Community_image.png'
 
 function Community() {
     return (
@@ -9,13 +10,29 @@ function Community() {
                 </p>
                 <br />
                 <a className="button button--primary community__discord"
-                    href="#"
+                    href="https://discord.gg/bN5MNpfvht"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <span className="header__discord-logo"
                         aria-hidden="true"
                     />
                     Join us on Discord
                 </a>
+            </div>
+            <div className="community__visual" aria-hidden="true">
+                <div className="community__shape community__shape--back" />
+
+                <div className="community__image-wrapper">
+                    <div className="community__image-icon">
+                        <img
+                            src={communityLogo}
+                            alt="Community Logo - A group of people holding hands in a circle, symbolizing unity and support. - Wiki-IBS Community"
+                            className="community__image-icon"
+                        /></div>
+                </div>
+
+                <div className="community__shape community__shape--small" />
             </div>
         </section>)
 }
