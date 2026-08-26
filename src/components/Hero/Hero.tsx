@@ -19,7 +19,7 @@ function Hero() {
                     irritable bowel syndrome.
                 </p>
 
-                <a className="hero__button" href="#community">
+                <a className="hero__button" href="https://discord.gg/bN5MNpfvht">
                     <span
                         className="header__discord-logo"
                         aria-hidden="true"

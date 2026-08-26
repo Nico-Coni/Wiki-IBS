@@ -4,9 +4,9 @@ import logo from '../../assets/IBS_Logo.png'
 
 
 const navigation = [
-    { label: 'About', href: '#about' },
     { label: 'Vision', href: '#vision' },
     { label: 'Community', href: '#community' },
+    { label: 'About', href: '#about' },
 ]
 
 function Header() {
@@ -68,7 +68,9 @@ function Header() {
 
                 <a
                     className="button button--primary header__discord"
-                    href="#community"
+                    href="https://discord.gg/bN5MNpfvht"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <span
                         className="header__discord-logo"
