@@ -73,12 +73,16 @@
     padding: 0.5rem 0.75rem;
     border: 2px solid var(--border);
     border-radius: var(--radius-small);
-    transition: background 160ms ease, transform 160ms ease box-shadow 160ms ease;
+    transition:
+        color 160ms ease,
+        background-color 160ms ease,
+        transform 160ms ease,
+        box-shadow 160ms ease;
 }
 
 .header__nav a:hover {
     color: var(--primary);
-    background: var(--surface-secondary);
+    background-color: var(--surface-secondary);
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgb(25 45 30 / 12%);
 }
