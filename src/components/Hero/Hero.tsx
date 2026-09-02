@@ -4,22 +4,19 @@ function Hero() {
     return (
         <section className="hero" aria-labelledby="hero-title">
             <div className="hero__content">
-                <p className="hero__eyebrow">
-                    Understand • Share • Move Forward
-                </p>
 
                 <h1 id="hero-title" className="hero__title">
-                    Understand IBS better.
-                    <span> Live better with it.</span>
+                    IBS is a pain <span>in the ass</span>
+
                 </h1>
 
                 <p className="hero__description">
-                    A community-driven space to bring knowledge together,
-                    share experiences and help everyone move forward with
-                    irritable bowel syndrome.
+                    Occasionally literal. Mostly figurative. Always inconvenient.
+                    <br />
+                    We're a community of people who live with it, swapping tips and figuring out what works.
                 </p>
 
-                <a className="hero__button" href="https://discord.gg/bN5MNpfvht" target="_blank" rel="noopener noreferrer" >
+                <a className="discord__button" href="https://discord.gg/bN5MNpfvht" target="_blank" rel="noopener noreferrer" >
                     <span
                         className="header__discord-logo"
                         aria-hidden="true"

@@ -5,8 +5,9 @@
     gap: clamp(3rem, 7vw, 7rem);
     width: min(100% - 2rem, 1200px);
     margin: 0 auto;
-    padding: clamp(2.5rem, 5vw, 4.5rem) 0 0;
+    padding: clamp(1.5rem, 5vw, 1.5rem) 0 clamp(1.5rem, 5vw, 1.5rem);
     overflow: hidden;
+    border-top: 1px solid var(--border);
 }
 
 .footer p {

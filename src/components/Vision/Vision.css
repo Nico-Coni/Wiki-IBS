@@ -1,11 +1,9 @@
 .vision {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
     align-items: center;
-    gap: clamp(3rem, 7vw, 7rem);
+    gap: clamp(2rem, 4vw, 4rem);
     width: min(100% - 2rem, 1200px);
     margin: 0 auto;
-    padding: clamp(2.5rem, 5vw, 4.5rem) 0 0;
+    padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .vision__title {
@@ -23,17 +21,23 @@
 }
 
 .vision__description {
-    max-width: 590px;
+    max-width: 1200px;
     margin: 1.75rem 0 0;
     color: var(--text-secondary);
     font-size: clamp(1rem, 1.5vw, 1.15rem);
     line-height: 1.75;
 }
 
+.vision__description--highlight {
+    color: var(--primary);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    font-weight: 600;
+}
+
 .vision__visual {
     position: relative;
     display: grid;
-    min-height: clamp(330px, 42vw, 440px);
+    min-height: clamp(230px, 28vw, 300px);
     place-items: center;
     isolation: isolate;
 }
@@ -42,13 +46,13 @@
     position: relative;
     z-index: 2;
     display: grid;
-    width: min(80%, 390px);
+    width: min(90%, 250px);
     aspect-ratio: 1;
     place-items: center;
     border: 1px solid var(--border);
     border-radius: var(--radius-large);
     background: var(--surface);
-    box-shadow: 0 28px 70px rgb(22 55 30 / 14%);
+    box-shadow: 0 20px 50px rgb(22 55 30 / 14%);
     transform: rotate(2deg);
 }
 
@@ -67,19 +71,65 @@
 }
 
 .vision__shape--back {
-    width: min(92%, 450px);
+    width: min(100%, 290px);
     aspect-ratio: 1;
     border-radius: 45% 40% 60% 55% / 38% 62% 58% 42%;
-    transform: rotate(98deg);
+    transform: rotate(278deg);
 }
 
 .vision__shape--small {
-    right: 73%;
-    bottom: 2%;
-    width: 85px;
-    height: 85px;
-    border-radius: 28px;
+    right: 8%;
+    bottom: 76%;
+    width: 55px;
+    height: 55px;
+    border-radius: 18px;
     background: var(--primary);
     opacity: 0.16;
-    transform: rotate(58deg);
+    transform: rotate(68deg);
+}
+
+@media (max-width: 850px) {
+    .vision {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 3.5rem 0 4.5rem;
+        text-align: center;
+    }
+
+    .vision__content {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .vision__description {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .vision__visual {
+        min-height: 340px;
+    }
+
+    .vision__image-wrapper {
+        width: min(75vw, 360px);
+    }
+}
+
+@media (max-width: 520px) {
+    .vision {
+        padding-top: 3rem;
+    }
+
+    .vision__title {
+        font-size: clamp(2.6rem, 13vw, 3.8rem);
+    }
+
+    .vision__visual {
+        min-height: 330px;
+    }
+
+    .vision__image-wrapper {
+        width: min(78vw, 300px);
+        border-radius: var(--radius-medium);
+    }
 }

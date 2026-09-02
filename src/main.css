@@ -68,3 +68,24 @@ body {
   color: var(--text);
   font-family: Arial, sans-serif;
 }
+
+.discord__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0 1.1rem;
+  border-radius: var(--radius-small);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease box-shadow 160ms ease;
+  background: var(--primary);
+  color: #fff;
+}
+
+.discord__button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgb(76 175 79 / 25%);
+}

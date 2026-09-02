@@ -5,8 +5,8 @@ import logo from '../../assets/IBS_Logo.png'
 
 const navigation = [
     { label: 'Vision', href: '#vision' },
-    { label: 'Community', href: '#community' },
-    { label: 'About', href: '#about' },
+    // { label: 'Community', href: '#community' },
+    // { label: 'About', href: '#about' },
 ]
 
 function Header() {
