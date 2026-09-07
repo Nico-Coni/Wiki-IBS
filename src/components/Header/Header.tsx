@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Header.css'
-import logo from '../../assets/IBS_Logo.png'
+import logo from '../../assets/Logo_header.svg'
 
 
 const navigation = [
@@ -25,9 +25,9 @@ function Header() {
 
     return (
         <header className="header">
-            <a className="header__logo" href="/" aria-label="Accueil">
+            <a className="header__logo" href="/" aria-label="Home">
                 <span className="header__logo-mark" aria-hidden="true">
-                    <img src={logo} alt="Logo de Wiki-IBS" />
+                    <img src={logo} alt="Wiki-IBS's Logo" />
                 </span>
 
                 <span>Wiki-IBS</span>
@@ -36,7 +36,7 @@ function Header() {
             <button
                 className="header__menu-button"
                 type="button"
-                aria-label="Ouvrir le menu"
+                aria-label="Open menu"
                 aria-expanded={menuOpen}
                 onClick={() => setMenuOpen((isOpen) => !isOpen)}
             >
@@ -50,6 +50,7 @@ function Header() {
                         key={item.href}
                         href={item.href}
                         onClick={() => setMenuOpen(false)}
+                        aria-label={item.label}
                     >
                         {item.label}
                     </a>
@@ -61,7 +62,7 @@ function Header() {
                     className="header__theme-button"
                     type="button"
                     onClick={toggleTheme}
-                    aria-label="Changer de thème"
+                    aria-label="Change theme"
                 >
                     {theme === 'light' ? '☾' : '☀'}
                 </button>
